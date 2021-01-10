@@ -102,6 +102,7 @@ def get_or_create(session, model, filter_by_field, defaults=None, **kwargs):
         session.add(instance)
         return instance, True
 
+
 @app.route("/update_settings", methods=["POST"])
 def update_settings():
     switch = db.session.query(SmartSwitch).filter_by(id=request.form.get("id")).first()
