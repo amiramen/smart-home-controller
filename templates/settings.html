@@ -16,14 +16,14 @@
         function open_curtain(switch_id) {
             loading_gif = $(`#loading_switch_${switch_id.replaceAll(':', '_')}`)
             loading_gif.show();
-            $.get(`/open_curtain/${switch_id}/3`).done(function () {
+            $.get(`/open_curtain/${switch_id}/6`).done(function () {
                 loading_gif.hide();
             })
         }
         function close_curtain(switch_id) {
             loading_gif = $(`#loading_switch_${switch_id.replaceAll(':', '_')}`)
             loading_gif.show();
-            $.get(`/close_curtain/${switch_id}/3`).done(function () {
+            $.get(`/close_curtain/${switch_id}/6`).done(function () {
                 loading_gif.hide();
             })
         }
